@@ -155,7 +155,6 @@ the citation-bearing extractive fallback.
 - [Architecture](docs/ARCHITECTURE.md)
 - [Model card](docs/MODEL_CARD.md)
 - [API contract](docs/API.md)
-- [Ten-day learning plan](docs/10_DAY_PLAN.md)
 - [Interview and project pitch guide](docs/INTERVIEW_GUIDE.md)
 - [Security and privacy notes](SECURITY.md)
 
