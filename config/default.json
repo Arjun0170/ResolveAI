@@ -1,0 +1,28 @@
+{
+  "seed": 17,
+  "vocabulary": {
+    "max_size": 12000,
+    "min_frequency": 2,
+    "max_length": 32
+  },
+  "baseline": {
+    "alpha": 1.0
+  },
+  "neural": {
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "dropout": 0.2,
+    "epochs": 24,
+    "batch_size": 256,
+    "learning_rate": 0.002,
+    "weight_decay": 0.0001,
+    "patience": 5,
+    "threads": 8
+  },
+  "retrieval": {
+    "lexical_weight": 0.45,
+    "neural_weight": 0.45,
+    "route_weight": 0.10,
+    "top_k": 3
+  }
+}

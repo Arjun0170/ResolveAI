@@ -1,0 +1,26 @@
+{
+  "architecture": {
+    "dropout": 0.2,
+    "embedding_dim": 128,
+    "hidden_dim": 256,
+    "num_classes": 151,
+    "vocabulary_size": 2895
+  },
+  "best_epoch": 24,
+  "epochs_completed": 24,
+  "model_type": "mean_max_pooling_text_encoder",
+  "parameters": 475671,
+  "schema_version": 1,
+  "seed": 17,
+  "temperature": 1.5980808626049952,
+  "threshold": 0.36814070351758793,
+  "threshold_selection": {
+    "accuracy": 0.8509677419354839,
+    "in_scope_coverage": 0.9343333333333333,
+    "macro_f1": 0.872708265323609,
+    "oos_f1": 0.4032258064516129,
+    "threshold": 0.36814070351758793
+  },
+  "training_samples": 15100,
+  "validation_nll": 0.5758547955172921
+}

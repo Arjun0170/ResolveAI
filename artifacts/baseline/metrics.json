@@ -1,0 +1,128 @@
+{
+  "accuracy": 0.7592727272727273,
+  "artifacts": [
+    {
+      "bytes": 80254,
+      "kind": "numpy_model",
+      "name": "model.npz",
+      "sha256": "64e763e9ace40d2201eb893a284c50c896b4a505c323a76e49d3bb7edc5ed6bc"
+    }
+  ],
+  "calibration": {
+    "ece": 0.03480646850072297,
+    "nll": 1.3451300059177396,
+    "temperature": 0.9322281744386244,
+    "threshold": 0.2835678391959799
+  },
+  "environment": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "platform": "Linux-7.1.8-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "python": "3.13.14",
+    "pytorch": "2.13.0+cpu"
+  },
+  "in_scope_accuracy": 0.8322222222222222,
+  "in_scope_coverage": 0.9422222222222222,
+  "latency": {
+    "batch_size": 256,
+    "mean_ms_per_request": 0.021674085937206655,
+    "p50_ms_per_request": 0.02038138671878187,
+    "p95_ms_per_request": 0.0253039484377382,
+    "rounds": 5,
+    "throughput_requests_per_second": 46138.04720056764
+  },
+  "macro_f1": 0.8026003926906988,
+  "model": {
+    "alpha": 1.0,
+    "classes": 151,
+    "model_type": "multinomial_naive_bayes",
+    "schema_version": 1,
+    "temperature": 0.9322281744386244,
+    "threshold": 0.2835678391959799,
+    "threshold_selection": {
+      "accuracy": 0.817741935483871,
+      "in_scope_coverage": 0.9346666666666666,
+      "macro_f1": 0.833642441341508,
+      "oos_f1": 0.33707865168539325,
+      "threshold": 0.2835678391959799
+    },
+    "training_samples": 15100,
+    "validation_nll": 0.7749815709938485,
+    "vocabulary_size": 2895
+  },
+  "oos": {
+    "f1": 0.5097575399172087,
+    "false_negative": 569,
+    "false_positive": 260,
+    "precision": 0.6237337192474675,
+    "recall": 0.431,
+    "true_negative": 4240,
+    "true_positive": 431
+  },
+  "samples": 5500,
+  "top_confusions": [
+    {
+      "actual": "oos",
+      "count": 27,
+      "predicted": "book_flight"
+    },
+    {
+      "actual": "oos",
+      "count": 25,
+      "predicted": "traffic"
+    },
+    {
+      "actual": "oos",
+      "count": 24,
+      "predicted": "distance"
+    },
+    {
+      "actual": "yes",
+      "count": 19,
+      "predicted": "oos"
+    },
+    {
+      "actual": "oos",
+      "count": 19,
+      "predicted": "book_hotel"
+    },
+    {
+      "actual": "oos",
+      "count": 18,
+      "predicted": "definition"
+    },
+    {
+      "actual": "oos",
+      "count": 17,
+      "predicted": "spelling"
+    },
+    {
+      "actual": "oos",
+      "count": 15,
+      "predicted": "recipe"
+    },
+    {
+      "actual": "oos",
+      "count": 14,
+      "predicted": "last_maintenance"
+    },
+    {
+      "actual": "make_call",
+      "count": 14,
+      "predicted": "oos"
+    }
+  ],
+  "without_abstention": {
+    "accuracy": 0.7341818181818182,
+    "macro_f1": 0.7847663417053647,
+    "oos": {
+      "f1": 0.35056542810985464,
+      "false_negative": 783,
+      "false_positive": 21,
+      "precision": 0.9117647058823529,
+      "recall": 0.217,
+      "true_negative": 4479,
+      "true_positive": 217
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "alpha": 1.0,
+  "classes": 151,
+  "model_type": "multinomial_naive_bayes",
+  "schema_version": 1,
+  "temperature": 0.9322281744386244,
+  "threshold": 0.2835678391959799,
+  "threshold_selection": {
+    "accuracy": 0.817741935483871,
+    "in_scope_coverage": 0.9346666666666666,
+    "macro_f1": 0.833642441341508,
+    "oos_f1": 0.33707865168539325,
+    "threshold": 0.2835678391959799
+  },
+  "training_samples": 15100,
+  "validation_nll": 0.7749815709938485,
+  "vocabulary_size": 2895
+}

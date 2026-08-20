@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resolveai"
+version = "0.1.0"
+description = "Confidence-aware intent routing and grounded support intelligence"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [{name = "Arjun Tandon"}]
+dependencies = [
+  "numpy>=2.0,<3.0",
+  "pandas>=2.2,<3.0",
+  "torch>=2.8,<3.0",
+  "fastapi[standard]>=0.116,<0.117",
+]
+
+[project.scripts]
+resolveai = "resolveai.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"

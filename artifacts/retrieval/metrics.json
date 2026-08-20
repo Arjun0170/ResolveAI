@@ -1,0 +1,34 @@
+{
+  "data_leakage_control": "Knowledge and vocabulary use training split only.",
+  "evaluation_split": "CLINC150 in-scope test only",
+  "hybrid_without_route": {
+    "mrr": 0.8749257992062492,
+    "queries": 4500,
+    "recall_at_1": 0.8131111111111111,
+    "recall_at_3": 0.928
+  },
+  "lexical": {
+    "mrr": 0.8104890088248795,
+    "queries": 4500,
+    "recall_at_1": 0.7264444444444444,
+    "recall_at_3": 0.8795555555555555
+  },
+  "neural": {
+    "mrr": 0.8732549734540387,
+    "queries": 4500,
+    "recall_at_1": 0.8157777777777778,
+    "recall_at_3": 0.9182222222222223
+  },
+  "orchestrated": {
+    "mrr": 0.9175328521062038,
+    "queries": 4500,
+    "recall_at_1": 0.8811111111111111,
+    "recall_at_3": 0.9484444444444444
+  },
+  "weights": {
+    "lexical_weight": 0.45,
+    "neural_weight": 0.45,
+    "route_weight": 0.1,
+    "top_k": 3
+  }
+}

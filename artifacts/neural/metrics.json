@@ -1,0 +1,136 @@
+{
+  "accuracy": 0.8332727272727273,
+  "artifacts": [
+    {
+      "bytes": 1905847,
+      "kind": "pytorch_checkpoint",
+      "name": "model.pt",
+      "sha256": "b9f5e5aa27d2b7ee0bd26b888cf807ea21466474110aab77acab901aed11fe60"
+    }
+  ],
+  "calibration": {
+    "ece": 0.013674850652380818,
+    "nll": 0.8899117465336527,
+    "temperature": 1.5980808626049952,
+    "threshold": 0.36814070351758793
+  },
+  "environment": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "platform": "Linux-7.1.8-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "python": "3.13.14",
+    "pytorch": "2.13.0+cpu"
+  },
+  "in_scope_accuracy": 0.868,
+  "in_scope_coverage": 0.9397777777777778,
+  "latency": {
+    "batch_size": 256,
+    "mean_ms_per_request": 0.035741000000655276,
+    "p50_ms_per_request": 0.03887717968709126,
+    "p95_ms_per_request": 0.03930425312503871,
+    "rounds": 5,
+    "throughput_requests_per_second": 27979.07165388954
+  },
+  "macro_f1": 0.8625242027751472,
+  "model": {
+    "architecture": {
+      "dropout": 0.2,
+      "embedding_dim": 128,
+      "hidden_dim": 256,
+      "num_classes": 151,
+      "vocabulary_size": 2895
+    },
+    "best_epoch": 24,
+    "epochs_completed": 24,
+    "model_type": "mean_max_pooling_text_encoder",
+    "parameters": 475671,
+    "schema_version": 1,
+    "seed": 17,
+    "temperature": 1.5980808626049952,
+    "threshold": 0.36814070351758793,
+    "threshold_selection": {
+      "accuracy": 0.8509677419354839,
+      "in_scope_coverage": 0.9343333333333333,
+      "macro_f1": 0.872708265323609,
+      "oos_f1": 0.4032258064516129,
+      "threshold": 0.36814070351758793
+    },
+    "training_samples": 15100,
+    "validation_nll": 0.5758547955172921
+  },
+  "oos": {
+    "f1": 0.6950718685831622,
+    "false_negative": 323,
+    "false_positive": 271,
+    "precision": 0.7141350210970464,
+    "recall": 0.677,
+    "true_negative": 4229,
+    "true_positive": 677
+  },
+  "samples": 5500,
+  "top_confusions": [
+    {
+      "actual": "oos",
+      "count": 15,
+      "predicted": "spelling"
+    },
+    {
+      "actual": "oos",
+      "count": 15,
+      "predicted": "recipe"
+    },
+    {
+      "actual": "oos",
+      "count": 12,
+      "predicted": "travel_suggestion"
+    },
+    {
+      "actual": "oos",
+      "count": 11,
+      "predicted": "fun_fact"
+    },
+    {
+      "actual": "oos",
+      "count": 11,
+      "predicted": "income"
+    },
+    {
+      "actual": "oos",
+      "count": 10,
+      "predicted": "order"
+    },
+    {
+      "actual": "oos",
+      "count": 9,
+      "predicted": "smart_home"
+    },
+    {
+      "actual": "oos",
+      "count": 9,
+      "predicted": "sync_device"
+    },
+    {
+      "actual": "restaurant_reviews",
+      "count": 8,
+      "predicted": "oos"
+    },
+    {
+      "actual": "play_music",
+      "count": 8,
+      "predicted": "oos"
+    }
+  ],
+  "without_abstention": {
+    "accuracy": 0.792,
+    "macro_f1": 0.8347470564383023,
+    "oos": {
+      "f1": 0.5307262569832402,
+      "false_negative": 620,
+      "false_positive": 52,
+      "precision": 0.8796296296296297,
+      "recall": 0.38,
+      "true_negative": 4448,
+      "true_positive": 380
+    }
+  }
+}

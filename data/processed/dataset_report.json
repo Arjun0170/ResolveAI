@@ -1,0 +1,42 @@
+{
+  "counts": [
+    {
+      "count": 4500,
+      "is_oos": false,
+      "split": "test"
+    },
+    {
+      "count": 1000,
+      "is_oos": true,
+      "split": "test"
+    },
+    {
+      "count": 15000,
+      "is_oos": false,
+      "split": "train"
+    },
+    {
+      "count": 100,
+      "is_oos": true,
+      "split": "train"
+    },
+    {
+      "count": 3000,
+      "is_oos": false,
+      "split": "validation"
+    },
+    {
+      "count": 100,
+      "is_oos": true,
+      "split": "validation"
+    }
+  ],
+  "dataset": "CLINC150 / oos-eval data_full",
+  "duplicate_rows_by_text": 10,
+  "in_scope_labels": 150,
+  "license": "CC BY 3.0",
+  "rows": 23700,
+  "source_sha256": "36923c3705a59e08fe9c3883d8bc2dd966ef93e22cb78ac41171782a698d56e0",
+  "source_url": "https://raw.githubusercontent.com/clinc/oos-eval/master/data/data_full.json",
+  "texts_present_in_multiple_splits": 5
+}

@@ -1,0 +1,20 @@
+{
+  "abstained": 81,
+  "citation_coverage_on_resolved": 1.0,
+  "configuration": "single process, sequential requests, CPU, extractive generation",
+  "environment": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "platform": "Linux-7.1.8-200.fc44.x86_64-x86_64-with-glibc2.43",
+    "python": "3.13.14",
+    "pytorch": "2.13.0+cpu"
+  },
+  "in_scope_requests": 400,
+  "latency_ms_p50": 2.151638999748684,
+  "latency_ms_p95": 4.062717199758481,
+  "latency_ms_p99": 5.001338890315308,
+  "oos_requests": 100,
+  "requests": 500,
+  "resolved": 419,
+  "throughput_requests_per_second": 424.81718691179617
+}

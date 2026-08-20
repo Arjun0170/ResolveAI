@@ -1,0 +1,12 @@
+{
+  "cpp_total_ms": 254.38118300007773,
+  "default_backend": "numpy",
+  "dimensions": 256,
+  "exact_top_k_parity": true,
+  "k": 5,
+  "numpy_total_ms": 37.49537300063821,
+  "queries": 100,
+  "rows": 10000,
+  "selection_reason": "NumPy/BLAS is faster for the measured workload; C++ remains optional.",
+  "speedup_vs_numpy": 0.14739837498368247
+}
